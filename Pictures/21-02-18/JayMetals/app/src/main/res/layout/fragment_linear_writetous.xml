@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="misterro.bitnet.com.jaymetals.Activity.Writetous">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/vextor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/img_write_goback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="-20sp"
+                android:layout_weight="0.1"
+                android:background="@drawable/vextor"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/txt_write_to_us"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center |top "
+                android:layout_weight="0.8"
+                android:text="Write to us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36sdp"
+                tools:ignore="Suspicious0dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_weight="0.1"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/logout" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+<TextView
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:textColor="@color/black"
+    android:text="You can leave your suggestion here or write us to xyz@gmail.com"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_mailid"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edt_green_box"
+        android:hint="write your email id"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_suggestion"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edt_green_box"
+        android:hint="Enter your suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp" />
+
+    <Button
+        android:textColor="@color/white"
+        android:text="Send"
+        android:id="@+id/btn_send"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="30sp" />
+
+</LinearLayout>

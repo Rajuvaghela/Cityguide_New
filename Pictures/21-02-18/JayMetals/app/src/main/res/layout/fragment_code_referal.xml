@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="misterro.bitnet.com.jaymetals.Activity.CodeReferal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/vextor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btn_referalcode_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="-20sp"
+                android:layout_weight="0.1"
+                android:background="@drawable/vextor"
+                android:src="@drawable/back" />
+
+            <TextView
+
+                android:id="@+id/txt_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center |top "
+                android:layout_weight="0.8"
+                android:text="Refer Code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_36sdp"
+                tools:ignore="Suspicious0dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_weight="0.1"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/logout" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Refferal Code is"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_referal_code"
+            android:textSize="@dimen/_68sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="526230"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share it with other at every share you will get wallet money"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="misterro.bitnet.com.jaymetals.Fragments.Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_shopby"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="0.3"
+            android:background="@drawable/search_bg"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Shop By Category"
+            android:textColor="@color/blue" />
+
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="0.7"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="@dimen/_10sdp"
+            android:focusable="false"
+            android:hint="Search"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textColorHint="@color/blue" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginTop="@dimen/_13sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5sp"
+                android:layout_marginTop="5sp"
+                android:background="@color/blue"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15sp"
+                android:text="Product Category"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/product_category_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5sp"
+                android:layout_marginTop="10sp"
+                android:background="@color/blue"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/featured_product"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:text="Featured Product"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/featured_product_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/ro_services"
+                    android:gravity="center_vertical|end"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:text="Trending Services"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ro_services_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:src="@drawable/home_footer" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

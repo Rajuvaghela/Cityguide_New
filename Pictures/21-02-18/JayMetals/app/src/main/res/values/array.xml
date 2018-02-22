@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="color">
+        <item>#f0385e</item>
+        <item>#fb6d59</item>
+        <item>#ff995f</item>
+        <item>#ff995f</item>
+        <item>#6ea9a5</item>
+        <item>#68b68c</item>
+        <item>#82ce6a</item>
+        <item>#afcf6c</item>
+        <item>#dfdc75</item>
+        <item>#efed9a</item>
+        <item>#fbd7a5</item>
+    </array>
+
+    <integer-array name="product_cat_imgs">
+        <item>@drawable/product_cat1</item>
+        <item>@drawable/product_cat2</item>
+        <item>@drawable/product_cat3</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/global_bg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="misterro.bitnet.com.jaymetals.Activity.LoginActivity"
+    tools:showIn="@layout/activity_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/jay_metals" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="number"
+            android:id="@+id/login_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/edt_box"
+            android:gravity="center"
+            android:textColorHint="@color/blue"
+            android:hint="Enter Your Mobile Number"
+            android:textColor="@color/blue" />
+
+
+        <EditText
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColorHint="@color/blue"
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edt_box"
+            android:gravity="center"
+            android:hint="Enter Your Password"
+            android:textColor="@color/blue" />
+
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/blue"
+            android:text="Sign In"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout >

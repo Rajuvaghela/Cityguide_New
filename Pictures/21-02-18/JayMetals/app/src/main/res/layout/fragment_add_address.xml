@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="misterro.bitnet.com.jaymetals.Activity.AddAddress">
+
+<RelativeLayout
+    android:id="@+id/relative_address"
+   android:layout_marginTop="@dimen/_55sdp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:visibility="gone"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:id="@+id/txt_no_address"
+        android:text="No Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_show_address"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_show_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/white"
+            android:background="@color/green"
+            android:text="Add Address"
+            android:id="@+id/btn_add_address"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

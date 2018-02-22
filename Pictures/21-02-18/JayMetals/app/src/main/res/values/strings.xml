@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JayMetals</string>
+
+    <!--Default Names Of Dialogs-->
+    <string name="health_care">Health Care</string>
+    <string name="dialog_btn_yes">Yes</string>
+    <string name="dialog_btn_no">No</string>
+    <string name="dialog_btn_ok">Ok</string>
+    <string name="dialog_msg_internet_unavailable">Internet is unavailable</string>
+    <string name="title_activity_splash_screen">JayMetals</string>
+    <string name="title_activity_select_location">SelectLocation</string>
+    <string name="title_activity_otp">OTP Activity</string>
+    <string name="title_activity_otpconfirm">OTP Confirm</string>
+    <string name="title_activity_otpverify">OTP Verify</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_new_password">MainActivity</string>
+    <string name="title_referal_code">MainActivity</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_products">Products</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

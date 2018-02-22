@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#253743</color>
+    <color name="colorPrimaryDark">#253743</color>
+    <color name="colorAccent">#253743</color>
+
+    <color name="white">#ffffff</color>
+    <color name="blue">#00aae3 </color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="featured_product_details">#f0385e</color>
+    <color name="featured_product_amount">#34a701</color>
+    <color name="green">#6ec16e</color>
+    <color name="red">#d80027</color>
+    <color name="background">#ADADAD</color>
+
+
+
+</resources>
